@@ -283,13 +283,6 @@
       aspect-ratio:9/16; position:relative;
     }
     .short-wrap iframe { width:100%; height:100%; border:none; }
-    /* ── 更新說明 ── */
-    .yt-update-note {
-      margin-top:24px; background:rgba(244,130,31,0.06);
-      border:1px dashed rgba(244,130,31,0.3); border-radius:12px;
-      padding:16px 20px; font-size:12px; color:var(--brown-mid); line-height:1.8;
-    }
-    .yt-update-note strong { color:var(--orange); }
 
     /* ─── WHERE TO BUY ─── */
     .buy { padding:96px 0; background:var(--bg); }
@@ -419,7 +412,6 @@
       .buy-card { padding:20px 16px; flex-direction:row; text-align:left; gap:16px; }
       .buy-logo { width:48px; height:48px; font-size:22px; flex-shrink:0; margin-bottom:0; }
       .buy-btn { padding:8px 18px; font-size:11px; }
-      .yt-update-note { font-size:11px; padding:12px 14px; }
       .footer-inner { gap:24px; }
       .footer-bottom { flex-direction:column; align-items:flex-start; gap:8px; }
     }
@@ -839,10 +831,6 @@
       </div>
     </div>
 
-    <div class="yt-update-note reveal">
-      📌 <strong>如何新增影片：</strong>
-      到 <a href="https://www.youtube.com/@mego-tw/shorts" target="_blank" style="color:var(--orange)">穀米寶貝 Shorts 頁面</a> → 點選影片 → 複製網址中 <code>/shorts/</code> 後面的 ID → 替換 <code>index.html</code> 中對應的 iframe src → git push 即自動上線。目前顯示最新 4 支，共有 7 支可輪換。
-    </div>
   </div>
 </section>
 
