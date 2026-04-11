@@ -356,9 +356,9 @@
     @media(max-width:1024px){
       .hero { grid-template-columns:1fr; }
       .hero-right { display:none; }
-      .story .container { grid-template-columns:1fr; }
+      .story .container { grid-template-columns:1fr; gap:40px; }
       .story-visual { aspect-ratio:16/7; }
-      .gift-inner { grid-template-columns:1fr; }
+      .gift-inner { grid-template-columns:1fr; gap:40px; }
       .footer-inner { grid-template-columns:1fr 1fr; gap:32px; }
       .flavor-grid { grid-template-columns:repeat(3,1fr); }
       .shorts-grid { grid-template-columns:repeat(2,1fr); }
@@ -368,18 +368,59 @@
       nav { padding:0 20px; }
       .nav-links, .nav-shop { display:none; }
       .nav-hamburger { display:flex; }
-      .hero-title { font-size:42px; }
+      .hero-left { padding:52px 20px 40px; }
+      .hero-title { font-size:40px; }
+      .hero-title-en { font-size:15px; letter-spacing:2px; margin-bottom:20px; }
+      .hero-desc { font-size:14px; }
       .sec-h2 { font-size:26px; }
+      .sec-label { font-size:10px; letter-spacing:3px; }
+      .story { padding:64px 0; }
+      .story-visual { aspect-ratio:16/8; }
+      .story-deco { font-size:80px; }
+      .story-numbers { grid-template-columns:repeat(3,1fr); }
+      .flavors { padding:64px 0; }
       .flavor-grid { grid-template-columns:repeat(2,1fr); }
-      .buy-grid { grid-template-columns:1fr 1fr; }
-      .shorts-grid { grid-template-columns:repeat(2,1fr); }
-      .footer-inner { grid-template-columns:1fr; }
-      .hero-left { padding:60px 20px; }
+      .flavors-header { flex-direction:column; align-items:flex-start; }
+      .gift { padding:64px 0; }
+      .youtube { padding:64px 0; }
+      .youtube-header { flex-direction:column; align-items:flex-start; gap:12px; margin-bottom:32px; }
+      .shorts-grid { grid-template-columns:repeat(2,1fr); gap:12px; }
+      .buy { padding:64px 0; }
+      .buy-grid { grid-template-columns:1fr 1fr; gap:12px; margin-top:32px; }
+      .buy-card { padding:24px 16px; }
+      .footer-inner { grid-template-columns:1fr; gap:28px; }
     }
     @media(max-width:480px){
+      .container { padding:0 16px; }
+      nav { padding:0 16px; }
+      .hero-left { padding:40px 16px 36px; }
+      .hero-tag { font-size:11px; }
+      .hero-title { font-size:32px; line-height:1.2; }
+      .hero-title-en { font-size:13px; letter-spacing:1px; }
+      .hero-desc { font-size:13px; line-height:1.85; }
+      .hero-btns { flex-direction:column; }
+      .btn-fill, .btn-ghost { width:100%; text-align:center; padding:14px 24px; }
+      .sec-h2 { font-size:22px; }
+      .story { padding:48px 0; }
+      .story-numbers { grid-template-columns:repeat(3,1fr); }
+      .story-num-big { font-size:24px; }
+      .flavors { padding:48px 0; }
       .flavor-grid { grid-template-columns:1fr 1fr; }
-      .buy-grid { grid-template-columns:1fr; }
-      .shorts-grid { grid-template-columns:1fr 1fr; }
+      .fc-hero { height:80px; }
+      .fc-dot { width:36px; height:36px; }
+      .gift { padding:48px 0; }
+      .gift-card { padding:18px 16px; gap:14px; }
+      .gift-icon { width:46px; height:46px; font-size:24px; }
+      .youtube { padding:48px 0; }
+      .shorts-grid { grid-template-columns:1fr 1fr; gap:10px; }
+      .buy { padding:48px 0; }
+      .buy-grid { grid-template-columns:1fr; gap:12px; }
+      .buy-card { padding:20px 16px; flex-direction:row; text-align:left; gap:16px; }
+      .buy-logo { width:48px; height:48px; font-size:22px; flex-shrink:0; margin-bottom:0; }
+      .buy-btn { padding:8px 18px; font-size:11px; }
+      .yt-update-note { font-size:11px; padding:12px 14px; }
+      .footer-inner { gap:24px; }
+      .footer-bottom { flex-direction:column; align-items:flex-start; gap:8px; }
     }
   </style>
 </head>
