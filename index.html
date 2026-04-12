@@ -293,13 +293,13 @@
       transition:all 0.3s; text-decoration:none; color:var(--brown);
       display:flex; flex-direction:column; align-items:center;
     }
-    .buy-card:hover { transform:translateY(-4px); box-shadow:0 12px 40px rgba(44,26,14,0.1); border-color:var(--orange); }
+    .buy-card { cursor:default; }
     .buy-logo { width:64px; height:64px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:28px; margin-bottom:16px; }
     .buy-logo.shopee  { background:#FF6633; }
     .buy-logo.momo    { background:#CC0035; }
     .buy-logo.site    { background:var(--orange); }
     .buy-logo.market  { background:var(--green); }
-    .buy-logo.gift    { background:var(--yellow); }
+    .buy-logo.buy-gift { background:var(--yellow); }
     .buy-logo.store   { background:var(--teal); }
     .buy-name { font-size:16px; font-weight:700; margin-bottom:6px; }
     .buy-desc { font-size:13px; color:var(--brown-mid); line-height:1.7; font-weight:300; margin-bottom:16px; }
@@ -310,7 +310,6 @@
       font-family:'Noto Sans TC',sans-serif; text-decoration:none;
       display:inline-block; transition:background 0.2s;
     }
-    .buy-card:hover .buy-btn { background:var(--red); }
 
     /* ─── FOOTER ─── */
     footer { background:var(--brown); color:rgba(255,250,244,0.8); padding:56px 0 28px; }
@@ -843,42 +842,42 @@
       <p class="sec-sub">線上線下都找得到，選擇最方便的方式帶走台灣好味。</p>
     </div>
     <div class="buy-grid">
-      <a href="https://shopee.tw/mego" target="_blank" class="buy-card reveal">
+      <div class="buy-card reveal">
         <div class="buy-logo shopee">🛒</div>
         <div class="buy-name">蝦皮購物</div>
         <div class="buy-desc">最齊全的品項，不定期舉辦優惠活動，隨時查看最新折扣。</div>
         <span class="buy-btn">前往蝦皮</span>
-      </a>
-      <a href="https://momo.com.tw" target="_blank" class="buy-card reveal">
+      </div>
+      <div class="buy-card reveal">
         <div class="buy-logo momo">📦</div>
         <div class="buy-name">momo 購物網</div>
         <div class="buy-desc">快速到貨，支援信用卡、行動支付多元付款方式。</div>
         <span class="buy-btn">前往 momo</span>
-      </a>
-      <a href="https://mego.tw/shop" target="_blank" class="buy-card reveal">
+      </div>
+      <div class="buy-card reveal">
         <div class="buy-logo site">🌐</div>
         <div class="buy-name">官方網路商店</div>
         <div class="buy-desc">直接從品牌購買，享有最完整的產品資訊與售後服務。</div>
         <span class="buy-btn">官方商店</span>
-      </a>
-      <a href="#" class="buy-card reveal">
+      </div>
+      <div class="buy-card reveal">
         <div class="buy-logo market">🏪</div>
         <div class="buy-name">全台農會超市</div>
         <div class="buy-desc">於各縣市農會超市、農產品展售中心均有販售。</div>
         <span class="buy-btn">查看據點</span>
-      </a>
-      <a href="#gift" class="buy-card reveal">
-        <div class="buy-logo gift">🎁</div>
+      </div>
+      <div class="buy-card reveal">
+        <div class="buy-logo buy-gift">🎁</div>
         <div class="buy-name">禮盒訂購</div>
         <div class="buy-desc">節慶禮盒、企業採購專案，50 盒起訂享批量優惠。</div>
         <span class="buy-btn">洽詢禮盒</span>
-      </a>
-      <a href="https://maps.google.com" target="_blank" class="buy-card reveal">
+      </div>
+      <div class="buy-card reveal">
         <div class="buy-logo store">📍</div>
         <div class="buy-name">實體據點</div>
         <div class="buy-desc">工廠直營店、各地展售點，歡迎親臨試吃選購。</div>
         <span class="buy-btn">查看地圖</span>
-      </a>
+      </div>
     </div>
   </div>
 </section>
